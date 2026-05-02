@@ -52,7 +52,7 @@ def clean_data(df):
 
     missing = df[FEATURE_COLUMNS].isnull().sum().sum()
     if missing > 0:
-        df[FEATURE_COLUMNS] = df[FEATURE_COLUMNS].fillna(method='ffill').fillna(method='bfill')
+        df[FEATURE_COLUMNS] = df[FEATURE_COLUMNS].ffill().bfill()
         print(f"    Filled {missing} missing values")
     else:
         print(f"    No missing values found")

@@ -1,0 +1,5 @@
+Model: GradientBoostingClassifier
+Features: 10
+Saved scaler params
+Saved selector support
+Saved config

@@ -96,7 +96,7 @@ MODELS_DIR = os.path.join(os.path.dirname(__file__), "models")
 
 @st.cache_resource
 def load_model():
-    model = joblib.load(os.path.join(MODELS_DIR, "best_model.joblib"))
+    model = joblib.load(os.path.join(MODELS_DIR, "logistic_regression_model.joblib"))
     artifacts = joblib.load(os.path.join(MODELS_DIR, "preprocessing_artifacts.joblib"))
     meta = joblib.load(os.path.join(MODELS_DIR, "model_metadata.joblib"))
     model_size_kb = os.path.getsize(os.path.join(MODELS_DIR, "best_model.joblib")) / 1024

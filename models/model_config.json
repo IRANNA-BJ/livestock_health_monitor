@@ -1,0 +1,46 @@
+{
+  "label_map": {
+    "0": "Healthy",
+    "1": "Sick",
+    "2": "Stressed",
+    "3": "Inactive"
+  },
+  "all_features": [
+    "acc_x",
+    "acc_y",
+    "acc_z",
+    "acc_magnitude",
+    "acc_variance",
+    "temperature",
+    "temp_deviation",
+    "heart_rate",
+    "respiration_rate",
+    "activity_index",
+    "rumination_rate",
+    "hr_rolling_std",
+    "hr_rolling_range",
+    "activity_rolling_std",
+    "activity_rolling_range",
+    "movement_consistency",
+    "resp_hr_ratio",
+    "acc_jerk",
+    "hr_temp_ratio",
+    "activity_rumination",
+    "resp_temp_interaction",
+    "hr_instability",
+    "activity_consistency"
+  ],
+  "selected_features": [
+    "acc_variance",
+    "temp_deviation",
+    "heart_rate",
+    "rumination_rate",
+    "hr_rolling_std",
+    "hr_rolling_range",
+    "activity_rolling_std",
+    "activity_rolling_range",
+    "movement_consistency",
+    "hr_temp_ratio"
+  ],
+  "model_name": "Gradient Boosting"
+}
